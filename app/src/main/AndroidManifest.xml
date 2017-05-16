@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ub.pis15.madmodes.madmodes_pis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/prov2"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".RustickPrincipal"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemePrincipal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RustickMon"
+            android:parentActivityName=".RustickPrincipal"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeMon" />
+
+        <activity android:name=".boss.BossMain"
+            android:parentActivityName=".RustickMon"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <activity android:name=".runner.RunnerMain"
+            android:parentActivityName=".RustickMon"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeMon" />
+
+        <activity android:name=".util.YouWin"
+            android:parentActivityName=".RustickMon"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeMon" />
+        <activity android:name=".util.youlose"
+            android:parentActivityName=".RustickMon"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeMon" />
+
+    </application>
+
+</manifest>

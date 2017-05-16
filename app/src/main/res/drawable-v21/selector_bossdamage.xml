@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/damageon"
+        android:state_activated="true">
+        <bitmap
+            android:src="@drawable/dam1"/>
+    </item>
+
+    <item
+        android:id="@+id/damageoff">
+        <bitmap
+            android:src="@drawable/hit1"/>
+    </item>
+
+    <transition
+        android:fromId="@+id/damageon"
+        android:toId="@+id/damageoff"
+        android:drawable="@drawable/boss_damage">
+    </transition>
+
+</animated-selector>

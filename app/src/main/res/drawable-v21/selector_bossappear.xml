@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/appearon"
+        android:state_activated="true">
+        <bitmap
+            android:src="@drawable/appear1"/>
+    </item>
+
+    <item
+        android:id="@+id/appearoff">
+        <bitmap
+            android:src="@drawable/appear11"/>
+    </item>
+
+    <transition
+        android:fromId="@+id/appearon"
+        android:toId="@+id/appearoff"
+        android:drawable="@drawable/boss_appear">
+    </transition>
+
+</animated-selector>

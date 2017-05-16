@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/wood"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.23"
+                android:layout_marginTop="30px"
+                android:layout_alignParentLeft="true">
+
+
+                <TextView
+                    android:id="@+id/vidaBoss"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.47"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/money"
+                android:layout_width="50px"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.27"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/coin"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/coin" />
+
+
+                <TextView
+                    android:id="@+id/diners"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="3dp"
+                    android:text="500"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sett"
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/settings"
+                    android:layout_width="130px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100px"
+                    android:layout_weight="0.06"
+                    android:background="@drawable/settingsbtn"
+                    android:elevation="0dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/surfaceBoss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/noboss"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/wood"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="50px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/atack"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.10"
+                    android:background="@drawable/sword" />
+
+
+                <TextView
+                    android:id="@+id/danyPlayer"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vidaJugador"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="35px"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/heart1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1.10"
+                    android:background="@drawable/hfull" />
+
+                <ImageView
+                    android:id="@+id/heart2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/hfull" />
+
+                <ImageView
+                    android:id="@+id/heart3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/hfull" />
+
+                <ImageView
+                    android:id="@+id/heart4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/hfull" />
+
+                <ImageView
+                    android:id="@+id/heart5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/hfull" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.17"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/home"
+                    android:layout_width="130px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35px"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/Runner"
+                    android:layout_width="130px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75px"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/runner" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvBossShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

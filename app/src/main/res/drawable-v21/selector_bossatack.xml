@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/attackon"
+        android:state_activated="true">
+        <bitmap
+            android:src="@drawable/hit1"/>
+    </item>
+
+    <item
+        android:id="@+id/attackoff">
+        <bitmap
+            android:src="@drawable/hit1"/>
+    </item>
+
+    <transition
+        android:fromId="@+id/attackon"
+        android:toId="@+id/attackoff"
+        android:drawable="@drawable/boss_attack">
+    </transition>
+
+</animated-selector>
